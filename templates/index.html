@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>NLP: QA Chat Bot 🤖 </h1>
+     <h2>Please create your story and ask questions from our trained words only 🙃 </h2>
+     <h3> Our small Vocabulary 📚  : ['.',
+                                     '?',
+                                     'Daniel',
+                                     'Is',
+                                     'John',
+                                     'Mary',
+                                     'Sandra',
+                                     'apple',
+                                     'back',
+                                     'bathroom',
+                                     'bedroom',
+                                     'discarded',
+                                     'down',
+                                     'dropped',
+                                     'football',
+                                     'garden',
+                                     'got',
+                                     'grabbed',
+                                     'hallway',
+                                     'in',
+                                     'journeyed',
+                                     'kitchen',
+                                     'left',
+                                     'milk',
+                                     'moved',
+                                     'no',
+                                     'office',
+                                     'picked',
+                                     'put',
+                                     'the',
+                                     'there',
+                                     'to',
+                                     'took',
+                                     'travelled',
+                                     'up',
+                                     'went',
+                                     'yes']</h3>
+
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="Story" placeholder="Experience" required="required" />
+        <input type="text" name="Question" placeholder="Test Score" required="required" />
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Answer</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
