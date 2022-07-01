@@ -1,3 +1,4 @@
+pip==18.1
 spacy==2.0.16
 numpy==1.15.4
 keras
