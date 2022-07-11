@@ -10,4 +10,4 @@ by encoder C, weight by probability vector from the input. Applied the LSTM laye
 
 **Result:** Trained RNN model for 120 epochs and got the test accuracy of 91%. Deployed the model using Flask.
 
-![This is an image]/assets/images/]
+![This is an image]/assets/images/Web_App.png]
