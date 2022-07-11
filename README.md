@@ -8,6 +8,8 @@ encoder. Computed the match between internal state and each memory vector of enc
 product followed by a SoftMax layer. Created response vector from the memory vectors which is the sum over inputs
 by encoder C, weight by probability vector from the input. Applied the LSTM layer and SoftMax activation at the end.
 
+
+
 **Result:** Trained RNN model for 120 epochs and got the test accuracy of 91%. Deployed the model using Flask.
 
-![This is an image]/assets/images/Web_App.png]
+![Web App](/Web_App.png)
